@@ -1,12 +1,11 @@
 import React from "react";
-import BgHeader from "../images/bg-main.jpg";
-import Wrapper from "../components/UI/Wrapper/Wrapper";
-import MySection from "../components/MySection/MySection";
-import ListCardSection from "../components/ListCardSection/ListCardSection";
+import BgHeader from "../../images/bg-main.jpg";
+import MySection from "../../components/MySection/MySection";
+import ListCardSection from "../../components/ListCardSection/ListCardSection";
 
-import NatureImg from "../images/nature.png";
-import CultureImg from "../images/culture.png";
-import HistoryImg from "../images/history.png";
+import NatureImg from "../../images/nature.png";
+import CultureImg from "../../images/culture.png";
+import HistoryImg from "../../images/history.png";
 
 function Home() {
   const infoCards = [

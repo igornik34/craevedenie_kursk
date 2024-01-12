@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Game from "../Game/Game";
 import ResultTest from "../Result/ResultTest";
-import classes from "./Test.module.css"
+import classes from "./Test.module.css";
+import Loader from "../../Loader/Loader";
 
 function TestKursk({ questions }) {
   const [step, setStep] = useState(0);
@@ -11,7 +12,7 @@ function TestKursk({ questions }) {
 
   function onClickVariant(index) {
     if (choosenIndex !== null) return;
-    if (index === question.correct) {
+    if (index.id === question.correct_variant) {
       setCountCorrectAnswers(countCorrectAnswers + 1);
     }
 
@@ -20,6 +21,10 @@ function TestKursk({ questions }) {
       setChoosenIndex(null);
       setStep(step + 1);
     }, 500);
+  }
+
+  if (!questions.length) {
+    return <Loader />;
   }
 
   return (

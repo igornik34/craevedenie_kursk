@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { routes } from "../router";
-import Qrcode from "../pages/Qrcode";
 
 function AppRouter() {
   const location = useLocation();
@@ -13,7 +12,6 @@ function AppRouter() {
       {routes.map((route) => (
         <Route key={route.path} path={route.path} element={route.element} />
       ))}
-        <Route path={'/qrcode'} element={<Qrcode />}/>
     </Routes>
   );
 }

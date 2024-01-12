@@ -3,7 +3,6 @@ export default function getTime() {
     let hours = now.getHours();
     let minutes = now.getMinutes();
   
-    // Добавляем ведущий ноль, если значение часов или минут меньше 10
     hours = hours < 10 ? `0${hours}` : hours;
     minutes = minutes < 10 ? `0${minutes}` : minutes;
   

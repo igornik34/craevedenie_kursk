@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import BgNature from "../images/bg-nature.jpg";
-import MySection from "../components/MySection/MySection";
-import Wrapper from "../components/UI/Wrapper/Wrapper";
+import BgNature from "../../images/bg-nature.jpg";
+import MySection from "../../components/MySection/MySection";
+import Wrapper from "../../components/UI/Wrapper/Wrapper";
 import axios from "axios";
-import BlockSection from "../components/BlockSection/BlockSection";
+import BlockSection from "../../components/BlockSection/BlockSection";
+import classes from "./Nature.module.css"
 
 function Nature() {
   const [nature, setNature] = useState([]);
@@ -40,7 +41,7 @@ function Nature() {
           <i>Природа</i> - водоёмы, леса, растения, животные, особенности почв,
           рельеф, климатические особенности.
         </h2>
-        <div className="flex flex-col gap-8">
+        <div className={classes["blocks-section"]}>
           {nature.map((block) => (
             <BlockSection key={block.id} block={block} />
           ))}

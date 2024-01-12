@@ -1,0 +1,3 @@
+.blocks-section {
+    @apply flex flex-col gap-8
+}

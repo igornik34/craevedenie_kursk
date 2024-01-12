@@ -1,0 +1,7 @@
+.wrapper {
+    @apply min-h-screen flex flex-col justify-center items-center
+}
+
+.title {
+    @apply mb-5 text-3xl
+}
