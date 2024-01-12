@@ -1,0 +1,10 @@
+.menu {
+  @apply text-center;
+}
+
+.menu ul {
+  @apply inline-flex shadow-2xl mx-auto text-2xl rounded-full py-3 px-8 items-center justify-center gap-x-20 flex-wrap bg-indigo-700;
+}
+.menu ul li {
+    @apply max-md:mb-5
+}

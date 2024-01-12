@@ -1,0 +1,11 @@
+.section {
+    @apply min-h-screen h-full text-white flex items-center justify-center mb-16 bg-no-repeat bg-center bg-cover bg-fixed
+}
+
+.title {
+    @apply font-light text-center text-5xl md:text-8xl mb-10
+}
+
+.description {
+    @apply md:text-3xl text-xl text-center
+}

@@ -1,0 +1,15 @@
+.block-section {
+    @apply max-w-[1200px] w-full p-4 rounded-lg shadow-xl mx-auto bg-gray-400 bg-opacity-50
+}
+
+.img {
+    @apply after:clear-both after:h-1 after:block relative
+}
+
+.img img {
+    @apply w-full h-auto rounded float-left inline mr-10 aspect-[2/1] md:aspect-[2/1.5]
+}
+
+.dates {
+    @apply text-xl text-gray-700 italic
+}

@@ -1,0 +1,12 @@
+.result {
+  @apply text-center flex flex-col gap-3
+}
+.result button {
+  @apply font-bold rounded-3xl border-0 py-4 px-7 text-xl bg-red text-white mt-5 cursor-pointer;
+}
+.result h2 {
+  @apply mb-0 text-xl
+}
+.result img {
+  @apply w-[150px] mx-auto
+}

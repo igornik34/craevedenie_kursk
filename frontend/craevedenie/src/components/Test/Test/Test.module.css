@@ -1,0 +1,15 @@
+.test {
+  @apply max-w-4xl w-full rounded-3xl p-10 bg-white relative mx-auto;
+}
+
+.test::before,
+.test:after {
+  content: "";
+  @apply block h-12 rounded-br-3xl rounded-bl-3xl absolute left-1/2 -translate-x-1/2;
+}
+.test::before {
+  @apply w-[95%] -bottom-[10px] bg-white/80 z-0;
+}
+.test::after {
+  @apply w-[90%] -bottom-[20px] bg-white/30 z-10;
+}

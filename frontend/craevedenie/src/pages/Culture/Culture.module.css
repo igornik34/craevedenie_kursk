@@ -1,0 +1,7 @@
+.quote {
+    @apply md:text-3xl text-center text-xl italic mb-5;
+}
+
+.blocks-section {
+    @apply flex flex-col gap-8 mb-10
+}

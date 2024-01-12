@@ -1,9 +1,9 @@
 import React from 'react'
+import classes from "./Card.module.css"
 
 function Card({children, className}) {
-  const classes = 'bg-slate-400 rounded-[80px] duration-300 hover:shadow-2xl ' + className
   return (
-    <div className={classes}>
+    <div className={`${classes.card} ${className}`}>
         {children}
     </div>
   )

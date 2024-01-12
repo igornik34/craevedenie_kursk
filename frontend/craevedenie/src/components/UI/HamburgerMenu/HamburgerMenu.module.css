@@ -1,0 +1,31 @@
+.hamburger-menu {
+  @apply cursor-pointer flex flex-col items-center justify-center w-7 h-5 mr-5 ml-auto relative;
+}
+
+.hamburger-menu.open .line::before {
+  @apply rotate-45 visible top-0 origin-center;
+}
+.hamburger-menu.open .line::after {
+  @apply -rotate-45 visible bottom-0 origin-center;
+}
+.hamburger-menu.open .line {
+  @apply invisible;
+}
+
+.line {
+  @apply w-full h-[2px] bg-black/70 relative;
+}
+
+.line::before,
+.line::after {
+  content: "";
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  @apply absolute w-full h-[2px] bg-black/70;
+}
+
+.line::before {
+  @apply -top-2;
+}
+.line::after {
+  @apply -bottom-2;
+}

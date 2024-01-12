@@ -1,9 +1,8 @@
-import React from 'react';
+import React from "react";
+import classes from "./Wrapper.module.css";
 
 function Wrapper({ children, className }) {
-  const classes = 'container mx-auto py-4 px-2 max-w-7xl ' + className;
-
-  return <div className={classes}>{children}</div>;
+  return <div className={`${classes.wrapper} ${className}`}>{children}</div>;
 }
 
 export default Wrapper;

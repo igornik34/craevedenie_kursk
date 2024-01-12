@@ -1,16 +1,15 @@
-import React from 'react'
-import './HamburgerMenu.css'
+import React from "react";
+import classes from "./HamburgerMenu.module.css";
 
-function HamburgerMenu({toggleMenu, isOpen}) {
+function HamburgerMenu({ toggleMenu, isOpen }) {
   return (
-    <div className="hamburger-menu" onClick={toggleMenu}>
-      <div className={`hamburger ${isOpen ? 'open' : ''}`}>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-      </div>
+    <div
+      className={`${classes["hamburger-menu"]} ${isOpen ? classes.open : ""}`}
+      onClick={toggleMenu}
+    >
+      <div className={classes.line}></div>
     </div>
-  )
+  );
 }
 
-export default HamburgerMenu
+export default HamburgerMenu;

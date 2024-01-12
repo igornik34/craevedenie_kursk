@@ -1,0 +1,3 @@
+.footer {
+    @apply max-w-4xl text-white md:flex items-center justify-between uppercase mx-auto text-center
+}

@@ -1,0 +1,7 @@
+.wrapper {
+    @apply min-h-screen flex flex-col pt-20 items-center
+}
+
+.title {
+    @apply mb-5 text-xl md:text-3xl mt-16 text-center
+}

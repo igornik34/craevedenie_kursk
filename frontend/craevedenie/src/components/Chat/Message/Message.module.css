@@ -1,0 +1,3 @@
+.message {
+    @apply bg-lime-300 p-2 w-fit rounded-md text-[#222]
+}

@@ -1,0 +1,17 @@
+.progress {
+  @apply h-3 rounded-full bg-gray-200 mb-6;
+}
+.progress div {
+  @apply h-full rounded-full w-4/5 bg-gradient-to-br from-green-400 to-sky-400;
+}
+
+.game h2 {
+  @apply text-xl mb-4;
+}
+
+.game ul li {
+  @apply p-4 border-2 border-black/10 rounded-2xl mb-2 cursor-pointer transition-all duration-100 ease-in-out;
+}
+.game ul li:hover {
+  @apply border-black/30;
+}

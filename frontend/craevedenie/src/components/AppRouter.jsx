@@ -13,7 +13,7 @@ function AppRouter() {
       {routes.map((route) => (
         <Route key={route.path} path={route.path} element={route.element} />
       ))}
-        <Route key={'/qrcode'} path={'/qrcode'} element={<Qrcode />}/>
+        <Route path={'/qrcode'} element={<Qrcode />}/>
     </Routes>
   );
 }
